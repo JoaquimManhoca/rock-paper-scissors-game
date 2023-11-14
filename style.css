@@ -4,7 +4,7 @@
 body{
   height: 100vh;
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
 }
 section{
@@ -123,5 +123,11 @@ section{
     border-radius: 100px;
     margin-right: 10px;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 750px) {
+  section{
+    width: 500px;
   }
 }
