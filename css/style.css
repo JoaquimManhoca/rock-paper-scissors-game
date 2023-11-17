@@ -8,24 +8,29 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 section{
+    background-color: black;
     height: 550px;
     width: 700px;
     /* margin: 50px auto 0 auto; */
-    border: 2px solid white;
+    border: 5px solid skyblue;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
   .title{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    color: skyblue;
+    font-family: Algerian, Arial, Helvetica, sans-serif;
     font-size: 3rem;
     text-align: center;
   }
   .text{
-    color: white;
+    color: skyblue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin: 10px 0;
@@ -37,28 +42,22 @@ section{
     justify-content: center;
   }
   .buttons button{
-    background-color: rgb(49, 8, 49);
-    color: white;
+    background-color: transparent;
+    color: skyblue;
     border: none;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     font-size: 18px;
-    border: 2px solid white;
-    border-radius: 100px;
-    margin-right: 10px;
+    border: 2px solid skyblue;
+    /* border-radius: 100px; */
+    margin-right: 40px;
     cursor: pointer;
   }
   button:hover{
     opacity: 0.7;
     border-radius: 100px;
   }
-  body{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
+
   .image{
     width: 40px;
   }
@@ -85,11 +84,11 @@ section{
   section .reset-score,
   section .auto-play-score{
     background-color: black;
-    color: white;
+    color: skyblue;
     width: 100px;
     font-size: 15px;
     padding: 5px;
-    border: 2px solid white;
+    border: 2px solid skyblue;
     cursor: pointer;
   }
 
@@ -129,7 +128,7 @@ section{
     width: 100px;
     font-size: 15px;
     border: 2px solid white;
-    border-radius: 100px;
+    /* border-radius: 100px; */
     margin-right: 10px;
     cursor: pointer;
   }
