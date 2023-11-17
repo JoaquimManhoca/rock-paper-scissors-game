@@ -1,4 +1,6 @@
-
+*{
+  font-style: none;
+}
 
 
 body{
@@ -17,10 +19,12 @@ section{
     flex-direction: column;
   }
   .title{
-    font-size: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
     text-align: center;
   }
-  p{
+  .text{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -46,7 +50,7 @@ section{
   }
   button:hover{
     opacity: 0.7;
-    border: 2px solid white;
+    border-radius: 100px;
   }
   body{
     background-color: black;
@@ -108,7 +112,7 @@ section{
     width: 30px;
   }
   .title{
-    font-size: 30px;
+    font-size: 1.4rem;
     text-align: center;
   }
 
@@ -123,7 +127,7 @@ section{
     border: none;
     height: 100px;
     width: 100px;
-    font-size: 20px;
+    font-size: 15px;
     border: 2px solid white;
     border-radius: 100px;
     margin-right: 10px;
@@ -136,7 +140,7 @@ section{
     width: 500px;
   }
   .title{
-    font-size: 40px;
+    font-size: 1.8;
     text-align: center;
   }
 }
