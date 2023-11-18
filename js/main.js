@@ -48,6 +48,7 @@ let score = JSON.parse(localStorage.getItem('score') ) || {
         .innerHTML = ` <span>
                           Are you sure you want to reset the score?
                         </span>
+
                         <button class="js-yes-button" onclick="
                             yesConfirmation();
                           ">Yes</button>
@@ -144,7 +145,7 @@ let score = JSON.parse(localStorage.getItem('score') ) || {
     localStorage.setItem('score', JSON.stringify(score));
 
     document.querySelector('.js-result').innerText =`You ${playResult}.`;
-    document.querySelector('.js-moves').innerHTML = ` You <img class="image" src="img/${pickplayerMove}-emoji.png" alt=""> <img class="image" src="img/${computerGuess}-emoji.png" alt=""> computer`;
+    document.querySelector('.js-moves').innerHTML = `<img class="image" src="img/${pickplayerMove}-emoji.png" alt=""> <img class="image" src="img/${computerGuess}-emoji.png" alt="">`;
 
     updateScoreElement();
 

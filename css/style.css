@@ -36,10 +36,11 @@ section{
     margin: 10px 0;
   }
   .buttons{
-    width: 100%;
+    width: 400px;
     padding: 20px 0;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .buttons button{
     background-color: transparent;
@@ -50,7 +51,7 @@ section{
     font-size: 18px;
     border: 2px solid skyblue;
     /* border-radius: 100px; */
-    margin-right: 40px;
+    /* margin-right: 40px; */
     cursor: pointer;
   }
   button:hover{
@@ -68,6 +69,10 @@ section{
     display: block;
     margin: 0 auto;
   }
+  .box-display{
+    /* background-color: blue; */
+    height: 100px;
+  }
   .js-score,
   .js-moves,
   .js-result{
@@ -81,8 +86,12 @@ section{
     font-size: 24px;
     font-weight: bold;
   }
+  .js-score{
+    font-size: 15px;
+  }
   section .reset-score,
   section .auto-play-score{
+    font-family: Bauhaus, Arial, Helvetica, sans-serif;
     background-color: black;
     color: skyblue;
     width: 100px;
@@ -93,25 +102,38 @@ section{
   }
 
   .div-reset-score{
-    margin: 20px auto;
+
+    width: 230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 
   .reset-confirmation{
+    color: crimson;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 15px;
   }
+  .js-no-button,
+  .js-yes-button{
+    background-color: transparent;
+    color: brown;
+  }
 
 
-@media (max-width: 450px) {
+@media (max-width: 320px) {
   section{
-    width: 400px;
+    width: 100%;
+    height: 100vh;
     border: none;
   }
   .image{
     width: 30px;
   }
   .title{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
@@ -121,25 +143,156 @@ section{
     display: block;
     margin: 0 auto;
   }
+  .buttons{
+    width: 200px;
+  }
   .buttons button{
-    color: white;
     border: none;
-    height: 100px;
-    width: 100px;
-    font-size: 15px;
-    border: 2px solid white;
+    height: 50px;
+    width: 50px;
+    font-size: 10px;
+    border: 2px solid skyblue;
     /* border-radius: 100px; */
     margin-right: 10px;
     cursor: pointer;
   }
-}
+  section .reset-score,
+  section .auto-play-score{
+    width: 80px;
+    font-size: 12px;
+    padding: 5px;
+    border: 2px solid skyblue;
+    cursor: pointer;
+  }
+  .div-reset-score{
 
-@media (max-width: 750px) {
+    width: 180px;
+  }
+  .reset-confirmation{
+    font-size: 10px;
+  }
+  .js-no-button,
+  .js-yes-button{
+    font-size: 10px;
+  }
+
+}
+@media (max-width: 375px) {
   section{
-    width: 500px;
+    width: 100%;
+    height: 100vh;
+    border: none;
+  }
+  .image{
+    width: 30px;
   }
   .title{
-    font-size: 1.8;
+    font-size: 1.4rem;
     text-align: center;
+  }
+
+  button .img,
+  p .img{
+    width: 23px;
+    display: block;
+    margin: 0 auto;
+  }
+  .buttons{
+    width: 220px;
+  }
+  .buttons button{
+    border: none;
+    height: 60px;
+    width: 60px;
+    font-size: 10px;
+    border: 2px solid skyblue;
+    /* border-radius: 100px; */
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  section .reset-score,
+  section .auto-play-score{
+    width: 80px;
+    font-size: 12px;
+    padding: 5px;
+    border: 2px solid skyblue;
+    cursor: pointer;
+  }
+  .div-reset-score{
+
+    width: 180px;
+  }
+  .reset-confirmation{
+    font-size: 10px;
+  }
+  .js-no-button,
+  .js-yes-button{
+    font-size: 10px;
+  }
+
+}
+@media (max-width: 425px) {
+  section{
+    width: 100%;
+    border: none;
+  }
+  .image{
+    width: 30px;
+  }
+  .title{
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  button .img,
+  p .img{
+    width: 23px;
+    display: block;
+    margin: 0 auto;
+  }
+  .buttons{
+    width: 240px;
+  }
+  .buttons button{
+    border: none;
+    height: 70px;
+    width: 70px;
+    font-size: 10px;
+    border: 2px solid skyblue;
+    /* border-radius: 100px; */
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  section .reset-score,
+  section .auto-play-score{
+    width: 80px;
+    font-size: 12px;
+    padding: 5px;
+    border: 2px solid skyblue;
+    cursor: pointer;
+  }
+  .div-reset-score{
+
+    width: 180px;
+  }
+  .reset-confirmation{
+    font-size: 10px;
+  }
+  .js-no-button,
+  .js-yes-button{
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  section{
+    width: 100%;
+    border: none;
+  }
+  .title{
+    font-size: 1.6;
+    text-align: center;
+    margin-bottom: 0;
   }
 }
